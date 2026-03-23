@@ -677,8 +677,6 @@ export default function CalendarApp() {
     "in-down": { opacity:0, transform:"translateY(-22px)",transition:"none" },
   }[anim];
 
-  const dark = theme.textColor.startsWith("#f") || theme.textColor.startsWith("#e") || theme.textColor.startsWith("#d");
-
   return (
     <>
       <style>{`
@@ -711,7 +709,7 @@ export default function CalendarApp() {
         }
         /* LEFT */
         .cl {
-          flex: 0 0 44%; position: relative; overflow: hidden;
+          flex: 0 0 34%; position: relative; overflow: hidden;
           display: flex; flex-direction: column; justify-content: flex-end;
           padding: 40px 34px 34px;
         }
@@ -775,7 +773,7 @@ export default function CalendarApp() {
 
         /* ── RESPONSIVE ── */
         @media (max-width: 1200px) { .cal-outer { max-width: 840px; } }
-        @media (max-width: 1080px) { .cal-outer { max-width: 740px; } .cl { flex: 0 0 43%; padding: 30px 26px 28px; } }
+        @media (max-width: 1080px) { .cal-outer { max-width: 740px; } .cl { flex: 0 0 33%; padding: 30px 26px 28px; } }
         @media (max-width: 800px) {
           .cal-card { flex-direction: column; }
           .cal-outer { max-width: 600px; border-radius: 22px; }
